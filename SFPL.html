@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>San Francisco Public Library — Anushka Hirekar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  :root {
+    --purple:       #c47c1a;
+    --purple-light: #fdecd4;
+    --purple-bg:    #fef4e6;
+    --dark:         #7a4a08;
+    --mid:          #8c5a18;
+    --soft:         #a06820;
+    --muted:        #c49a60;
+    --border:       #f5d9a8;
+    --bg:           #fffaf4;
+  }
+  .phone-showcase { background: linear-gradient(135deg, #7a4a08 0%, #c47c1a 60%, #7a4a08 100%); }
+  .phone-showcase::before {
+    background: radial-gradient(ellipse at 30% 50%, rgba(251,222,183,0.3) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 50%, rgba(255,255,255,0.05) 0%, transparent 60%);
+  }
+  .impact-section { background: linear-gradient(135deg, #7a4a08 0%, #c47c1a 100%); }
+  footer { color: #a48b69; }
+  footer span { color: #c47c1a; }
+
+  /* Change 5: black text in first two sections (Solution + About SFPL) */
+  .black-text p,
+  .black-text li,
+  .black-text .step-body {
+    color: #111 !important;
+  }
+
+/* Hero meta text */
+.hero-meta-block p { color: #3d3d5c !important; }
+
+/* Purple band body text */
+.purple-band p { color: #3d3d5c !important; }
+
+  /* Change 4: project nav button */
+  .project-nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 48px 0 32px;
+  }
+  .project-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 1.5px solid var(--border);
+    border-radius: 50px;
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--mid);
+    text-decoration: none;
+    background: white;
+    transition: all 0.2s;
+  }
+  .project-nav-btn:hover {
+    border-color: var(--purple);
+    color: var(--purple);
+  }
+</style>
+</head>
+<body class="project-page">
+
+<div class="header">
+  <div class="name"><a href="index.html">Anushka Hirekar</a></div>
+  <div class="nav">
+    <a href="index.html#work">Work</a>
+    <a href="https://drive.google.com/file/d/1HnoQUsNSvV3MSLa4OC9waweURi6MgcEO/view?usp=sharing" target="_blank">Resume</a>
+    <a href="about.html">About Me</a>
+  </div>
+</div>
+
+<div class="page">
+
+  <section class="hero">
+    <span class="hero-label">Case Study</span>
+    <h1>San Francisco Public Library</h1>
+    <div class="hero-meta">
+      <div class="hero-meta-block">
+        <div class="label">My Role</div>
+        <p>Conducted user research and gap analysis. Performed tree testing and iterative design refinements. Contributed to creating the new site map and developing the information prototype.</p>
+      </div>
+      <div class="hero-meta-block">
+        <div class="label">Duration</div>
+        <p>Mar. 2024 – Apr 2024 · 05 weeks</p>
+      </div>
+      <div class="hero-meta-block" style="margin-top:20px;">
+        <div class="label">Platform</div>
+        <p>Website · Information Architecture · UX Research</p>
+      </div>
+      <div class="hero-meta-block" style="margin-top:20px;">
+        <div class="label">Team</div>
+        <p>Anuja Belkhede &amp; Galina Kupina</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="purple-band">
+    <div>
+      <div class="col-label">Overview</div>
+      <p>SFPL.org — an information architecture case study. We are improving the digital structure of the San Francisco Public Library website to enhance content organisation, navigation, and overall findability to better serve a diverse range of library users.</p>
+    </div>
+    <div>
+      <div class="col-label">Problem</div>
+      <p>The existing SFPL website faced several usability issues:</p>
+      <ul style="margin-top:12px; padding-left:16px; font-size:13px; color:#111; line-height:1.8;">
+        <li><strong>Complex Navigation:</strong> Users struggled to find information about booking locations, tracking and changing reservations</li>
+        <li><strong>Inconsistent Information Architecture:</strong> Link names, categories and locations within the website made the content hard to find</li>
+        <li><strong>Limited Content Discoverability:</strong> Important locations and programs were buried under multiple menus, reducing visibility</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phone-showcase">
+    <img src="SFPL/MacBook Pro 14 1.png" alt="SFPL website redesign" class="showcase-img" onclick="openLightbox(this)">
+    <div class="showcase-text">
+      <h2>Redesigning the SFPL Digital Experience</h2>
+      <p>Improving navigation, content discoverability, and information architecture so every library user can find what they need.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Change 5: black-text class on Solution section -->
+  <section class="section black-text">
+    <h2 class="section-heading">Solution</h2>
+    <p class="step-body">To address navigation challenges and improve content discoverability on the SFPL website, we redesigned its information architecture using a tree-testing approach.</p>
+    <p class="step-body" style="margin-top:10px;">We conducted card sorting to understand how users mentally categorised content, and created more intuitive structures based on their input. This was followed by tree testing, which confirmed significant improvements in task success rates. The refined IA features clearer labels, logical category groupings, and streamlined pathways to help users complete their tasks with ease.</p>
+    <p class="step-body" style="margin-top:10px;">Additionally the solution included a revised site map and a clickable prototype showcasing the improved structure — enabling all types of library patrons to explore, engage, and find the resources they need.</p>
+    <div class="walkthrough-links" style="margin-top:20px;">
+      <a class="link-pill" href="https://www.figma.com/proto/kfhRAHT8H371olevJaSyxe/SFPL-Wireframes?page-id=0%3A1&node-id=2-2&viewport=120%2C138%2C0.1&t=FGE6jPUg8vh7Iy5p-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A2" target="_blank">
+        <span class="link-icon">🔗</span>Proposed Site Structure
+      </a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Change 5: black-text class on About SFPL section -->
+  <section class="section black-text">
+    <h2 class="section-heading">About SFPL</h2>
+    <p class="step-body">The San Francisco Public Library (SFPL) creates an inclusive environment for knowledge, community and culture within the diverse neighbourhoods of San Francisco. SFPL provides access to a wide range of resources and is dedicated to serving a diverse community and fostering intellectual exploration.</p>
+    <div class="findings-grid" style="margin-top:24px;">
+      <div class="finding-card">
+        <div class="card-header"><div class="finding-icon">📚</div><h4>Services and Offering</h4></div>
+        <div class="card-content">
+          <p>Services &amp; Collection: Provides a vast collection of books, eBooks, audiobooks, films, and digital resources covering a wide range of subjects and genres.</p>
+          <p style="margin-top:6px;">Technology: Provides library public computer access, Wi-Fi, and technology assistance to bridge the digital divide.</p>
+        </div>
+      </div>
+      <div class="finding-card">
+        <div class="card-header"><div class="finding-icon">🎓</div><h4>Programs and Services</h4></div>
+        <div class="card-content">
+          <p>Programs &amp; Events: Engages in enriching programmes for all ages, including storytimes, author talks, workshops, and screenings and exhibitions.</p>
+          <p style="margin-top:6px;">Grassroots Support: Benefits from resources and assistance to support consistent achievement and lifelong learning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <h2 class="section-heading">Design Process</h2>
+    <p class="step-body">Our process for the SFPL was to redesign bigger within thorough understanding of the library goals, brief uses the redesign objectives while forming a clear set of objectives.</p>
+
+    <div class="process-step">
+      <span class="step-badge">01 Research &amp; Analysis</span>
+      <h3 class="step-title">Research &amp; Analysis</h3>
+      <p class="step-body" style="margin-bottom:12px;">Defining the key research goals for the redesign:</p>
+      <div class="findings-grid">
+        <div class="finding-card">
+          <div class="card-header"><div class="finding-icon">🔍</div><h4>User Engagement</h4></div>
+          <div class="card-content"><p>Increase User Engagement: Encourage library users to explore the library's events, workshops, and programmes, fostering community participation.</p></div>
+        </div>
+        <div class="finding-card">
+          <div class="card-header"><div class="finding-icon">♿</div><h4>Accessibility</h4></div>
+          <div class="card-content"><p>Boost Patronage at all Branches: Optimise sign-ups for library membership ensuring patrons can access their nearest library branch conveniently.</p></div>
+        </div>
+        <div class="finding-card">
+          <div class="card-header"><div class="finding-icon">🏛️</div><h4>Accessibility Online</h4></div>
+          <div class="card-content"><p>Improve Online Accessibility: Simplify access to the library enabling everything from events and reservations to borrowing.</p></div>
+        </div>
+        <div class="finding-card">
+          <div class="card-header"><div class="finding-icon">📢</div><h4>Promote Programmes</h4></div>
+          <div class="card-content"><p>Promote Lifelong Learning Opportunities: Offer accessible recommendations to find top events, events, and books through the SFPL website &amp; in-library services.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="process-step">
+      <span class="step-badge">02 User Personas &amp; Task Creation</span>
+      <h3 class="step-title">User Personas &amp; Task Creation</h3>
+      <p class="step-body">To better understand the target audience, we created two user personas to guide the redesign.</p>
+      <div class="findings-grid" style="margin-top:20px;">
+        <div class="finding-card">
+          <div class="card-header"><div class="finding-icon">👴</div><h4>David (The Senior)</h4></div>
+          <div class="card-content"><p>A retired male in his mid-60s who is a frequent library visitor seeking easy access to books, digital resources, and community events.</p></div>
+        </div>
+        <div class="finding-card">
+          <div class="card-header"><div class="finding-icon">👩‍👧</div><h4>Sophie (The Mother)</h4></div>
+          <div class="card-content"><p>A parent looking for educational programs, child-friendly events, and convenient borrowing options.</p></div>
+        </div>
+      </div>
+      <p class="step-body" style="margin-top:16px;">User tasks were defined based on the business goals — covering how to find, browse, and access library resources, events, and support:</p>
+      <div class="full-width-card">
+        <h4>Key Tasks</h4>
+        <ul>
+          <li>Browse library resources &amp; e-books, as audiobooks or eBooks</li>
+          <li>Check out books and materials as audiobooks or as books</li>
+          <li>Find out for new library events and programmes</li>
+          <li>Sign up for library events and programmes</li>
+          <li>Find and access volunteer learning resources</li>
+          <li>Explore volunteering opportunities</li>
+          <li>Find out language learning resources and services</li>
+          <li>Find assistance for individuals with disabilities</li>
+          <li>Browse or preview Classrooms &amp; Co. programs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="process-step">
+      <span class="step-badge">03 Gap Analysis &amp; Tree Testing</span>
+      <h3 class="step-title">Gap Analysis &amp; Tree Testing</h3>
+      <p class="step-body">We conducted a gap analysis, by mapping the user tasks to the information architecture on the website where the existing gaps failed to meet user needs.</p>
+      <div class="hmw-block">
+        <strong>We also ran tree testing</strong> to identify "what did not determine" (or what left current SFPL users confused).
+      </div>
+      <div class="full-width-card">
+        <h4>Key Findings from Tree Testing:</h4>
+        <ul>
+          <li><strong>Lower Success Rate:</strong> Tasks 2, 3, 5 and 9 had the lowest success rates (53%), reporting poor findability of key resources</li>
+          <li><strong>Unclear Labelling:</strong> Users frequently click unexpected labels, highlighting issues with the IA</li>
+          <li><strong>Navigation Inefficiencies:</strong> The structure made it difficult to discover digital resources and find relevant information</li>
+        </ul>
+      </div>
+      <div class="walkthrough-links" style="margin-top:20px;">
+        <a class="link-pill" href="https://docs.google.com/spreadsheets/d/147gpPU1X7eZ8Bp8UhIoW9Q72MXYYpJ4A7-MgBiRKtO4/edit?usp=sharing" target="_blank"><span class="link-icon">🔗</span>SFPL Gap Analysis</a>
+        <a class="link-pill" href="https://docs.google.com/spreadsheets/d/1Pq2iDUn3HWMC0HXNQXDaqxjFlhu1w_GH/edit?usp=sharing&ouid=106916900441169121607&rtpof=true&sd=true" target="_blank"><span class="link-icon">🔗</span>SFPL Existing Tree Testing Results</a>
+      </div>
+      <div class="img-row">
+        <img src="SFPL/SFPL_Gap Analysis - Google Sheets_page-0001.jpg" alt="Gap analysis" onclick="openLightbox(this)">
+        <img src="SFPL/SFPL_Existing Tree Testing.png" alt="Existing tree testing results" onclick="openLightbox(this)">
+      </div>
+    </div>
+
+    <div class="process-step">
+      <span class="step-badge">04 Card Sorting &amp; Flow IA Development</span>
+      <h3 class="step-title">Card Sorting &amp; Flow IA Development</h3>
+      <p class="step-body">Following the analysis and categorisation, we conducted a card sorting activity when users were asked to:</p>
+      <div class="findings-grid single-col" style="margin-top:20px;">
+        <div class="finding-card">
+          <div class="card-header"><div class="finding-icon">🗂️</div><h4>Group checking and categorisation</h4></div>
+          <div class="card-content"><p>Group checking and categories to design that grouped the library categories for redesign — this was to design the new categories for the groups of information that best suited users.</p></div>
+        </div>
+        <div class="finding-card">
+          <div class="card-header"><div class="finding-icon">🌳</div><h4>New Tree Structure</h4></div>
+          <div class="card-content"><p>These users are conducted on the same groups of group on these groups.</p></div>
+        </div>
+      </div>
+      <p class="step-body" style="margin-top:16px;">Using table-setting and a standardised naming system, we organised the results to enhance new tree: systematically fine-tuning, improving, labelling, mapping.</p>
+      <div class="walkthrough-links" style="margin-top:20px;">
+        <a class="link-pill" href="https://docs.google.com/spreadsheets/d/18gy295BOhyT7BBJWUz5M7bakgAka4qP-YW-ewJnfdb0/edit?usp=sharing" target="_blank"><span class="link-icon">🔗</span>SFPL card sorting results</a>
+        <a class="link-pill" href="https://docs.google.com/spreadsheets/d/1x_VVeBjpQ0CfGA-YAGeFy__APgeoTeCL8tkiT_4Z6zw/edit?usp=sharing" target="_blank"><span class="link-icon">🔗</span>SFPL labelling results</a>
+      </div>
+      <div class="img-row">
+        <img src="SFPL/SFPL_Card Sorting - Google Sheets_page-0001.jpg" alt="Card sorting results" onclick="openLightbox(this)">
+        <img src="SFPL/SFPL_Card Sorting Activity - Google Sheets_page-0001.jpg" alt="Card sorting activity" onclick="openLightbox(this)">
+      </div>
+      <div class="img-row">
+        <img src="SFPL/SFPL_normalized group names - Google Sheets_page-0001.jpg" alt="Normalized group names" onclick="openLightbox(this)">
+        <img src="SFPL/SFPL_Standardized ranking- Google Sheets_page-0001.jpg" alt="Standardized ranking" onclick="openLightbox(this)">
+      </div>
+    </div>
+
+    <div class="process-step">
+      <span class="step-badge">05 Tree Testing &amp; Success Rate Improvement</span>
+      <h3 class="step-title">Tree Testing &amp; Success Rate Improvement</h3>
+      <p class="step-body">We repeated the tree testing, conducting another round of tree testing using OptimalSort.</p>
+      <div class="full-width-card">
+        <h4>Key Results</h4>
+        <ul>
+          <li>Overall Success Rate Improvement: Tasks previously failing were now succeeding at a much higher rate, making the IA far more intuitive to users</li>
+          <li>Drop in Task 5 Success: Task 5's success rate dropped from 100% to 75% — outcome indicated this key step needed extra alignment</li>
+          <li>Sublime Refinement Required: This results highlighted issues for further system advancement — this addressed adjustments to reduce task failures</li>
+        </ul>
+      </div>
+      <div class="img-row">
+        <img src="SFPL/Task 2.png" alt="Task 2 results" onclick="openLightbox(this)">
+        <img src="SFPL/Task 5.png" alt="Task 5 results" onclick="openLightbox(this)">
+      </div>
+      <div class="img-row">
+        <img src="SFPL/Task 7.png" alt="Task 7 results" onclick="openLightbox(this)">
+        <img src="SFPL/Task 9.png" alt="Task 9 results" onclick="openLightbox(this)">
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <div class="impact-section">
+    <h2>Impact &amp; Value</h2>
+    <p class="sub">The content strategy proposals significantly improved the usability and navigability of the SFPL website, illustrating our users' needs with business goals.</p>
+    <div class="impact-grid">
+      <div class="impact-card"><div style="font-size:22px; margin-bottom:8px;">📈</div><p>Improved task success rates (80–100%) for previously underperforming tasks, demonstrating significantly clearer navigation and information findability.</p></div>
+      <div class="impact-card"><div style="font-size:22px; margin-bottom:8px;">🗂️</div><p>Clearer utilisation groups led to a more intuitive and inclusive experience — user-centered design decisions led to a more intuitive and inclusive experience.</p></div>
+      <div class="impact-card"><div style="font-size:22px; margin-bottom:8px;">✅</div><p>This project demonstrated how a rigorous research process can translate directly into meaningful design improvements — making a complex digital resource more accessible, engaging, and easy to use.</p></div>
+    </div>
+  </div>
+
+  <!-- Change 4: prev button only -->
+  <div class="project-nav">
+    <a href="PSVR2.html" class="project-nav-btn">← PlayStation VR2</a>
+  </div>
+
+</div>
+
+<footer>Designed by <span>Anushka Hirekar</span> · San Francisco Public Library Case Study</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close" onclick="closeLightbox()">×</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+<script>
+function openLightbox(el) {
+  document.getElementById('lightbox-img').src = el.src;
+  document.getElementById('lightbox-img').alt = el.alt;
+  document.getElementById('lightbox').classList.add('active');
+}
+function closeLightbox() { document.getElementById('lightbox').classList.remove('active'); }
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+</body>
+</html>

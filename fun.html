@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fun — Anushka Hirekar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="project-page">
+
+<div class="header">
+  <div class="name"><a href="index.html">Anushka Hirekar</a></div>
+  <div class="nav">
+    <a href="index.html#work">Work</a>
+    <a href="https://drive.google.com/file/d/1HnoQUsNSvV3MSLa4OC9waweURi6MgcEO/view?usp=sharing" target="_blank">Resume</a>
+    <a href="about.html">About Me</a>
+  </div>
+</div>
+
+<div class="page">
+
+  <section class="hero">
+    <span class="hero-label">Fun</span>
+    <h1>Tell your pet I said hi!</h1>
+  </section>
+
+  <p class="pluto-intro">Meet Pluto 🐾</p>
+  <p class="pluto-body">If you adore dogs and enjoy seeing them in your feeds, this is just for you! Here are some lovely photos of my dog, Pluto, that I hope you'll enjoy.<br>
+  I truly love dogs, and animals in general! (Well, almost all of them). Who knows, I might even open a rescue center one day!</p>
+
+  <div class="divider"></div>
+
+  <div class="photo-grid">
+    <div class="photo-grid-item" onclick="openLightbox(this)">
+      <img src="Pluto/D64E0E51-6157-41B8-8623-E0C3158B5FAE.JPG" alt="Pluto as a puppy being held">
+    </div>
+    <div class="photo-grid-item" onclick="openLightbox(this)">
+      <img src="Pluto/IMG_0659.jpg" alt="Pluto resting">
+    </div>
+    <div class="photo-grid-item" onclick="openLightbox(this)">
+      <img src="Pluto/IMG_0997.jpg" alt="Pluto with blue collar">
+    </div>
+    <div class="photo-grid-item" onclick="openLightbox(this)">
+      <img src="Pluto/IMG_2111.jpg" alt="Pluto sitting">
+    </div>
+    <div class="photo-grid-item" onclick="openLightbox(this)">
+      <img src="Pluto/IMG_2635.jpg" alt="Pluto on sofa">
+    </div>
+    <div class="photo-grid-item" onclick="openLightbox(this)">
+      <img src="Pluto/IMG_9274.GIF" alt="Pluto with red toy">
+    </div>
+    <div class="photo-grid-item" onclick="openLightbox(this)">
+      <img src="Pluto/IMG_9294.jpg" alt="Pluto with harness">
+    </div>
+  </div>
+
+</div>
+
+<footer>Designed by <span>Anushka Hirekar</span></footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close" onclick="closeLightbox()">×</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+<script>
+function openLightbox(el) {
+  const img = el.tagName === 'IMG' ? el : el.querySelector('img');
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox-img').alt = img.alt;
+  document.getElementById('lightbox').classList.add('active');
+}
+function closeLightbox() { document.getElementById('lightbox').classList.remove('active'); }
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+</body>
+</html>

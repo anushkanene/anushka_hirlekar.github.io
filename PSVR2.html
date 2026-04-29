@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlayStation VR2 — Anushka Hirekar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  :root {
+    --purple:       #003791;
+    --purple-light: #ccd8f5;
+    --purple-bg:    #e8eef9;
+    --dark:         #00265f;
+    --mid:          #1a3560;
+    --soft:         #4a6080;
+    --muted:        #7a90b0;
+    --border:       #d0daea;
+    --bg:           #f5f8fc;
+  }
+  .phone-showcase { background: linear-gradient(135deg, #00142e 0%, #003791 60%, #00142e 100%); }
+  .phone-showcase::before {
+    background: radial-gradient(ellipse at 30% 50%, rgba(0,100,255,0.25) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 50%, rgba(255,255,255,0.05) 0%, transparent 60%);
+  }
+  .impact-section { background: linear-gradient(135deg, #00142e 0%, #003791 100%); }
+  .above-beyond { background: #00142e; }
+  .above-beyond::before { background: radial-gradient(circle, rgba(0,55,145,0.35) 0%, transparent 70%); }
+  footer { color: #7a90b0; }
+  footer span { color: #003791; }
+
+  /* Change 4: project nav buttons */
+  .project-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0 32px;
+  }
+  .project-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 1.5px solid var(--border);
+    border-radius: 50px;
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--mid);
+    text-decoration: none;
+    background: white;
+    transition: all 0.2s;
+  }
+  .project-nav-btn:hover {
+    border-color: var(--purple);
+    color: var(--purple);
+  }
+</style>
+</head>
+<body class="project-page">
+
+<div class="header">
+  <div class="name"><a href="index.html">Anushka Hirekar</a></div>
+  <div class="nav">
+    <a href="index.html#work">Work</a>
+    <a href="https://drive.google.com/file/d/1HnoQUsNSvV3MSLa4OC9waweURi6MgcEO/view?usp=sharing" target="_blank">Resume</a>
+    <a href="about.html">About Me</a>
+  </div>
+</div>
+
+<div class="page">
+
+  <section class="hero">
+    <span class="hero-label">Case Study</span>
+    <h1>PlayStation VR2</h1>
+    <div class="hero-meta">
+      <div class="hero-meta-block">
+        <div class="label">Platform</div>
+        <p>Website · Content Strategy · UX Writing</p>
+      </div>
+      <div class="hero-meta-block">
+        <div class="label">Duration</div>
+        <p>Feb 2024 – Mar 2024 · 5 weeks</p>
+      </div>
+      <div class="hero-meta-block" style="margin-top:20px;">
+        <div class="label">My Role</div>
+        <p>Collaborated with a cross-functional team to research the PS VR2 content audit. Independently cataloged the outlined content on multiple areas of the site's structure. Identified common gaps and opportunities for improvement. Developed actionable content strategy recommendations to enhance user engagement.</p>
+      </div>
+      <div class="hero-meta-block" style="margin-top:20px;">
+        <div class="label">Team</div>
+        <p>Anuja Belkhede &amp; Galina Kupina</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="purple-band">
+    <div>
+      <div class="col-label">Overview</div>
+      <p>Welcome to PlayStation VR2 — a content strategy case study aimed at improving the structure, clarity, and discoverability of content across the official PlayStation VR2 website. This project focuses on enhancing how users find and engage with content related to Sony's VR ecosystem.</p>
+    </div>
+    <div>
+      <div class="col-label">The Challenge</div>
+      <p>The PlayStation VR2 website housed an extensive library of pages with rich content but faced challenges such as:</p>
+      <ul style="margin-top:12px; padding-left:16px; font-size:13px; color:var(--mid); line-height:1.8;">
+        <li>Inconsistencies in content structure</li>
+        <li>Redundant or outdated information</li>
+        <li>Lack of clarity in key messaging</li>
+      </ul>
+      <p style="margin-top:10px; font-size:13px; color:var(--mid);">Our goal was to identify these gaps and craft strategies to enhance content effectiveness, ensuring consistency and alignment with PlayStation's brand identity.</p>
+    </div>
+  </div>
+
+  <div class="phone-showcase">
+    <img src="PSVR2/vr2-hardware 2.png" alt="PlayStation VR2 headset" class="showcase-img" onclick="openLightbox(this)">
+    <div class="showcase-text">
+      <h2>Rethinking the PS VR2 Content Experience</h2>
+      <p>A content strategy audit improving clarity, consistency, and engagement across the PlayStation VR2 website.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <h2 class="section-heading">The Process</h2>
+    <p class="section-sub">Three parallel workstreams — audit, analysis, and strategy — carried out across group and individual phases.</p>
+    <div class="process-three-col">
+      <div class="process-col">
+        <h4>Content Audit</h4>
+        <ul>
+          <li>Using a shared spreadsheet, we conducted a content audit of the web pages, focusing on key topics</li>
+          <li>Evaluated existing content for quality and relevance</li>
+          <li>Identified areas with redundant information</li>
+          <li>Collaborated with Multiplicity to document issues online</li>
+        </ul>
+        <p class="phase-label">Group Phase</p>
+      </div>
+      <div class="process-col">
+        <h4>Content Analysis</h4>
+        <ul>
+          <li>Took the audit a step further in analyzing the content itself</li>
+          <li>Reviewed the key issues for improvement by key audience segments</li>
+          <li>Identified core content issues including redundant copy, broken TOCs, and inconsistent terminology</li>
+          <li>Explored key areas for improvement in content hierarchy</li>
+        </ul>
+        <p class="phase-label">Individual Phase</p>
+      </div>
+      <div class="process-col">
+        <h4>Strategy</h4>
+        <ul>
+          <li>Based on the analysis, I created a content strategy focused on:</li>
+          <li>Streamlining relevant information for key audiences at each stage</li>
+          <li>Improving content hierarchy to guide users efficiently</li>
+          <li>Replacing inline taxonomy to guide users through key user-friendly journeys</li>
+        </ul>
+        <p class="phase-label">Individual Phase</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <h2 class="section-heading">Content Audit &amp; Tone of Voice</h2>
+    <p class="step-body">A comprehensive audit of the PS VR2 website's content and communication style, highlighting key patterns, strengths, and opportunities to align tone of voice with user expectations and brand identity.</p>
+    <div class="img-row">
+      <img src="PSVR2/Content Audit Infographic.png" alt="Content audit infographic" onclick="openLightbox(this)">
+      <img src="PSVR2/Tone of voice infographic.png" alt="Tone of voice infographic" onclick="openLightbox(this)">
+    </div>
+    <div class="walkthrough-links" style="margin-top:20px;">
+      <a class="link-pill" href="https://docs.google.com/spreadsheets/d/1vTjlm1PkBTmiyJRrGs5OifS9BMQclCuUjiC0PW1cVQg/edit?usp=sharing" target="_blank">
+        <span class="link-icon">🔗</span>Data Source: Content audit of 84 pages on 8th Feb. 2024
+      </a>
+      <a class="link-pill" href="https://docs.google.com/spreadsheets/d/12R_-Vla8a08RuXaMTrQcjNs_dPLQp7Z7/edit?usp=sharing&ouid=106916900441169121607&rtpof=true&sd=true" target="_blank">
+        <span class="link-icon">🔗</span>Data Source: Content audit of 10 pages on 22nd Feb. 2024
+      </a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <h2 class="section-heading">Findings</h2>
+
+    <div class="findings-grid" style="margin-top:24px;">
+      <div class="finding-card">
+        <div class="card-header"><div class="finding-icon">✅</div><h4>Finding 1</h4></div>
+        <div class="card-content"><p>Visuals and content tones align well. The imagery, typography, and branding elements work seamlessly together to create an immersive and engaging experience.</p></div>
+      </div>
+      <div class="finding-card">
+        <div class="card-header"><div class="finding-icon">⚠️</div><h4>Finding 2</h4></div>
+        <div class="card-content"><p>Lack of consistent flow and repetitive content hinders the user experience. Users navigating to troubleshoot pages encounter a fragmented, non-linear journey.</p></div>
+      </div>
+    </div>
+
+    <div class="process-step">
+      <span class="finding-num">Finding 1</span>
+      <h3 class="step-title">Visuals and content tones align well.</h3>
+      <p class="step-body">A key strength of the PlayStation VR2 website is its well-articulated visual and content tone alignment. The imagery, typography, and branding elements work seamlessly together, creating a cohesive, immersive, and engaging experience.</p>
+      <p class="step-body" style="margin-top:10px;">In the case of PlayStation VR2, dynamic visuals and innovative elements complement the futuristic and immersive nature of the product. The content naturally emphasises excitement, innovation, and high-performance gaming — engaging the user without overwhelming them.</p>
+      <p class="step-body" style="margin-top:10px;">The strategy for better content and visuals enhances the overall user experience, making information accessible and creating a seamless, easy-to-follow browsing experience.</p>
+    </div>
+
+    <div class="process-step">
+      <span class="finding-num">Finding 2</span>
+      <h3 class="step-title">Lack of consistent flow and repetitive content hinders the user experience.</h3>
+      <p class="step-body" style="margin-bottom:4px;"><strong>Use Case 1:</strong> An existing customer wants to troubleshoot issues with connecting their headset.</p>
+      <div class="full-width-card">
+        <h4>Current State Issue</h4>
+        <p>Navigating from the PS VR2 homepage to the troubleshoot pages, the user gets an option to select from listed issues. Upon selecting a specific issue, users are redirected to the PlayStation Support Page, where they must navigate again through multiple tabs to find available solutions. This process lacks a consistent flow, creating a disjointed experience with no clear navigation paths — adding friction to the user journey.</p>
+      </div>
+      <img src="PSVR2/F2.1.png" alt="Current state user flow diagram" class="case-img" onclick="openLightbox(this)">
+      <div class="full-width-card">
+        <h4>Proposed Solution</h4>
+        <ol>
+          <li><strong>Direct Route to PS VR2 Support:</strong> Instead of redirecting users to the Parent Company's Support Page, the solution would ensure they can find specific support options — including support pages, video calling, and online chat — directly.</li>
+          <li><strong>Content-Based Navigation:</strong> The page would be more user-centred, offering specific support pages, links to relevant content, and real-time personalisation, providing a more effective and seamless experience.</li>
+        </ol>
+        <p style="margin-top:10px;">These improvements would create a smoother, more efficient support experience by reducing friction and maintaining consistency throughout the navigation flow.</p>
+      </div>
+
+      <p class="step-body" style="margin-top:24px; margin-bottom:4px;"><strong>Use Case 2:</strong> An existing customer wants to troubleshoot issues that are not already listed.</p>
+      <div class="full-width-card">
+        <h4>Redundant Navigation and Lack of Content Differentiation</h4>
+        <p>In cases where the issue is not listed on the PlayStation VR2 troubleshoot page, users have the option to select "Other" — which redirects them to a menu of the same troubleshooting options. Since the content of each category is indistinguishable, users are likely to navigate through unnecessary sections, resulting in time wasted and a diminished experience.</p>
+        <ul>
+          <li><strong>Redundant User Journey:</strong> The page takes users continuously circling to similar steps while not offering new or relevant information</li>
+          <li><strong>Lack of Content Differentiation:</strong> Displaying the same details across all categories creates a false sense of content variety, reducing trust</li>
+          <li><strong>Flawed Dynamic Support:</strong> Users may need the support system to intelligently suggest options as they type</li>
+        </ul>
+      </div>
+      <div class="img-row-three">
+        <img src="PSVR2/image 10.png" alt="User flow screenshot" onclick="openLightbox(this)">
+        <img src="PSVR2/image 9.png" alt="Support page screenshot" onclick="openLightbox(this)">
+        <img src="PSVR2/image 8.png" alt="Navigation screenshot" onclick="openLightbox(this)">
+      </div>
+      <div class="full-width-card" style="margin-top:20px;">
+        <h4>Proposed Solution</h4>
+        <ol>
+          <li><strong>Smart Search:</strong> Instead of directing users through unnecessary categories, offer a dynamic search bar that allows users to type and find the most relevant issues immediately</li>
+          <li><strong>Intelligent Taxonomy:</strong> Introduce intelligent content filtering to show only the most relevant content as users interact with each dropdown, ensuring the page is more useful and credible</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <div class="impact-section">
+    <h2>Impact &amp; Value</h2>
+    <p class="sub">Strategic improvements to content structure, navigation flow, and user experience across the PlayStation VR2 website.</p>
+    <div class="impact-grid">
+      <div class="impact-card"><div style="font-size:22px; margin-bottom:8px;">🎯</div><p>Identified critical content inconsistencies and redundancies across multiple sections of the PS VR2 website, providing a clear audit trail for improvements.</p></div>
+      <div class="impact-card"><div style="font-size:22px; margin-bottom:8px;">🔄</div><p>Proposed a streamlined support flow that reduces friction and keeps users within the PS VR2 ecosystem rather than redirecting them to the parent company.</p></div>
+      <div class="impact-card"><div style="font-size:22px; margin-bottom:8px;">📐</div><p>Developed actionable content strategy recommendations to enhance effectiveness, consistency, and alignment with PlayStation's brand identity.</p></div>
+    </div>
+  </div>
+
+  <!-- Change 4: prev/next buttons -->
+  <div class="project-nav">
+    <a href="AssistWell.html" class="project-nav-btn">← AssistWell</a>
+    <a href="SFPL.html" class="project-nav-btn">San Francisco Public Library →</a>
+  </div>
+
+</div>
+
+<footer>Designed by <span>Anushka Hirekar</span> · PlayStation VR2 Case Study</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close" onclick="closeLightbox()">×</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+<script>
+function openLightbox(el) {
+  document.getElementById('lightbox-img').src = el.src;
+  document.getElementById('lightbox-img').alt = el.alt;
+  document.getElementById('lightbox').classList.add('active');
+}
+function closeLightbox() { document.getElementById('lightbox').classList.remove('active'); }
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+</body>
+</html>
